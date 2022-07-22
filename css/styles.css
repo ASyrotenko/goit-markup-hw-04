@@ -12,6 +12,8 @@
   --bg-banner-color: #c4c4c4;
   --border-main-color: #ececec;
   --btn-border-color: #000000;
+  --social-primary-color: #afb1b8;
+  --social-footer-bg-color: #ffffff1a;
 }
 
 /* general rules */
@@ -139,8 +141,9 @@ img {
 }
 
 .header-contacts-link {
-  display: block;
+  display: flex;
   padding: 32px 0;
+  align-items: center;
 
   font-weight: 500;
   line-height: 1.14;
@@ -157,15 +160,11 @@ img {
 
 .header-icon-envelope {
   fill: currentColor;
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
 }
 
 .header-icon-smartphone {
   fill: currentColor;
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
 }
 
@@ -224,26 +223,19 @@ img {
 
 .features-list {
   display: flex;
+  gap: 30px;
 }
 
 .features-bg-icon {
   width: 270px;
   height: 120px;
+  border-radius: 4px;
   background-color: var(--bg-light-color);
-}
-
-.features-icon {
-  width: 70px;
-  height: 70px;
-  margin: auto;
+  padding: 25px 100px;
 }
 
 .features-item {
   width: 270px;
-}
-
-.features-item:not(:first-child) {
-  margin-left: 30px;
 }
 
 .features-title {
@@ -332,6 +324,68 @@ img {
   text-align: center;
 }
 
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 10px;
+}
+
+.team-social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  color: var(--social-primary-color);
+  border-radius: 50%;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--accent-primary-color);
+  color: var(--text-white-color);
+}
+
+.team-social-icon {
+  fill: currentColor;
+}
+
+/* main clients */
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients-list {
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.clients-link {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-primary-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+  color: var(--social-primary-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-primary-color);
+  border-color: var(--accent-primary-color);
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
 /* main portfolio */
 
 .portfolio-filter-list {
@@ -360,12 +414,16 @@ img {
 .portfolio-filter-btn.current-btn {
   color: var(--text-white-color);
   background-color: var(--accent-primary-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-filter-btn:hover,
 .portfolio-filter-btn:focus {
   background-color: var(--accent-primary-color);
   color: var(--text-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-projects-list {
@@ -378,6 +436,13 @@ img {
 
 .portfolio-projects-item {
   flex-basis: calc((100% - 2 * 30px) / 3);
+}
+
+.portfolio-projects-item:hover,
+.portfolio-projects-item:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-projects-disc {
@@ -405,6 +470,7 @@ img {
 }
 
 .footer > .container {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -426,4 +492,42 @@ img {
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
   color: var(--accent-primary-color);
+}
+
+.footer-social-container {
+  padding-top: 12px;
+  margin-left: 70px;
+}
+
+.footer-social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--text-white-color);
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer-social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  background-color: var(--social-footer-bg-color);
+  border-radius: 50%;
+  color: var(--text-white-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-primary-color);
+}
+
+.footer-social-icon {
+  fill: currentColor;
 }
