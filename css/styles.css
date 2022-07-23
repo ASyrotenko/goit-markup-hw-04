@@ -227,11 +227,13 @@ img {
 }
 
 .features-bg-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: var(--bg-light-color);
-  padding: 25px 100px;
 }
 
 .features-item {
@@ -332,10 +334,11 @@ img {
 }
 
 .team-social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
   color: var(--social-primary-color);
   border-radius: 50%;
 }
@@ -367,12 +370,14 @@ img {
 }
 
 .clients-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--social-primary-color);
   border-radius: 4px;
-  padding: 16px 32px;
+
   color: var(--social-primary-color);
 }
 
@@ -514,10 +519,11 @@ img {
 }
 
 .footer-social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
   background-color: var(--social-footer-bg-color);
   border-radius: 50%;
   color: var(--text-white-color);
